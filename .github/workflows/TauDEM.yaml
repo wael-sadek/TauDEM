@@ -32,7 +32,12 @@ jobs:
       - name: Install TauDEM
         run: |
           sh ./GDAL.sh
+          sh ./GCC.sh
+          sh ./MPICH2.sh
           mkdir bin
           cd src
-          make
+          gdal-config
+          nc-config
+          mpicxx
+          # make
 
