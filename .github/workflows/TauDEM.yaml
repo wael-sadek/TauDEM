@@ -31,7 +31,7 @@ jobs:
 
       - name: Install TauDEM
         run: |
-          ./GDAL.sh
+          sh ./GDAL.sh
           mkdir bin
           cd src
           make
