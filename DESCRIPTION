@@ -1,0 +1,11 @@
+Package: exampleRPackage
+Type: Package
+Title: An example R package
+Version: 0.1.0
+Description: This package is an example R package.
+Encoding: UTF-8
+LazyData: true
+Depends: 
+    R (>= 3.1)
+Imports:
+    stringr
