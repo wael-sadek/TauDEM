@@ -10,7 +10,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  Install TauDEM:
+  Install-TauDEM:
     runs-on: ${{ matrix.config.os }}
 
     name: ${{ matrix.config.os }}
