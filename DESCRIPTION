@@ -3,7 +3,7 @@ Type: Package
 Title: An example R package
 Version: 0.1.0
 Authors@R: c(
-    person("tesr", role = "aut")
+    person("test", "test", , "test@mailbox.org", role = c("aut", "cre")
   )
 Description: This package is an example R package.
 Encoding: UTF-8
