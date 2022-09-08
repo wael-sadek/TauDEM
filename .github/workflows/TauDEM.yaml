@@ -10,7 +10,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  R-CMD-check:
+  Install TauDEM:
     runs-on: ${{ matrix.config.os }}
 
     name: ${{ matrix.config.os }}
@@ -23,10 +23,6 @@ jobs:
           # - {os: windows-latest}
           - {os: ubuntu-latest}
 
-    env:
-      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
-      R_KEEP_PKG_SOURCE: yes
-
     steps:
       - uses: actions/checkout@master
         with:
@@ -35,6 +31,7 @@ jobs:
 
       - name: Install TauDEM
         run: |
+          ls
           cd TauDEM
           ./GDAL.sh
           mkdir bin
