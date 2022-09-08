@@ -26,7 +26,7 @@ jobs:
     steps:
       - uses: actions/checkout@master
         with:
-          name: dtarb/TauDEM
+          repository: dtarb/TauDEM
           ref: refs/heads/Develop
 
       - name: Install TauDEM
@@ -37,8 +37,5 @@ jobs:
           sudo apt-get install openmpi-bin
           mkdir bin
           cd src
-          gdal-config
-          nc-config
-          mpicxx
-          # make
+          make
 
