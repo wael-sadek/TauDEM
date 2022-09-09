@@ -1,10 +1,10 @@
 # Script to setup MPICH
-wget http://www.mpich.org/static/downloads/3.2.1/mpich-3.2.1.tar.gz
+wget https://www.mpich.org/static/downloads/4.0.2/mpich-4.0.2.tar.gz
 
 # Now following instructions in README
-tar xzf mpich-3.2.1.tar.gz
+tar xzf mpich-4.0.2.tar.gz
 mkdir mpich
-cd mpich-3.2.1
+cd mpich-4.0.2
 ./configure --prefix=$HOME/TauDEMDependencies/mpich/mpich-install 2>&1 | tee c.txt
 make 2>&1 | tee m.txt
 make install 2>&1 | tee mi.txt

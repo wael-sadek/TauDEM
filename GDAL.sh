@@ -1,7 +1,7 @@
 # Getting GDAL
-wget http://download.osgeo.org/gdal/2.3.0/gdal230.zip gdal230.zip 
-unzip gdal230.zip 
-cd gdal-2.3.0
+wget http://download.osgeo.org/gdal/3.5.1/gdal351.zip gdal351.zip
+unzip gdal351.zip
+cd gdal-3.5.1
 ./configure --prefix=$HOME/TauDEMDependencies/gdal 
 make
 make install

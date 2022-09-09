@@ -32,11 +32,6 @@ jobs:
       - name: Install TauDEM
         run: |
           sh ./GDAL.sh
-          pwd
-          echo $PATH
-          find . -name gdal-config
-          find . -name nc-config
-          find . -name mpicxx
           sh ./MPICH2.sh
           mkdir bin
           cd src
